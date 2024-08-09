@@ -1,0 +1,218 @@
+html {
+    height: 70%;
+    width:100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("top%20background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #060606;
+    text-align: center;
+    padding: 50px;
+    height: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    grid-template-rows: 1fr; /* Creates a single row */
+    margin-top: -30px;
+    padding-bottom: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    margin-right:0px;
+    text-align: right;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+}
+
+#grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    grid-template-rows: 1fr; /* Creates a single row */
+    gap: 10px; /* Optional: Adds space between the columns */
+    border-top: 2px solid #040404;
+    height: 100%;
+    margin-left: 50px;
+}
+
+#grid-item-1-1 {
+    margin: auto;
+}
+
+#title404 {
+    font-size:130px;
+    margin-bottom:0px;
+    margin-top: 5px;
+    font-family:'Times New Roman', Times, serif
+    
+}
+
+#seams {
+    font-size: 35px;
+    padding-bottom: 15px;
+    margin-top: -5px;
+    font-family: "Cormorant Garamond", serif;
+     font-weight: 1000;
+}
+
+#flash {
+    font-size: 25px;
+    padding-bottom: 40px;
+    margin-top: -25px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 1000;
+}
+
+.button {
+    border: 5px solid #3E0C0B;
+    border-radius: 20px;
+    color: #F1EADD;
+    background-color: #3E0C0B;
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+#grid-item-1-2 {
+    margin: auto;
+}
+
+#grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    grid-template-rows: 1fr; /* Creates a single row */
+    gap: 10px; /* Optional: Adds space between the columns */
+    background-color:#3E0C0B;
+    width: 115%;
+    height: 35%;
+    margin-left: -10%;
+}
+
+#grid-item-2-1 {
+    margin: auto;
+}
+
+#footerText1{
+    font-size: 25px;
+}
+
+#footerText2{
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#footerText3{
+    font-size: 15px;
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+#grid-item-2-2 {
+    margin: auto;
+}
+
+#grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    grid-template-rows: 1fr; /* Creates a single row */
+}
+
+#grid-item-3-1 {
+    margin: auto;
+}
+
+#grid-item-3-2 {
+    margin: auto;
+}
+
+/* css for the card game */
+#game-area {
+    margin-left: -10%;
+    width: 115%;
+    background-image: url("bottom%20background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game-board-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.card.flipped {
+    transform: rotateY(180deg)
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front {
+    background-color: #683f3f;
+}
+
+.card-back {
+    background-color: #F1EADD;
+    transform: rotateY(180deg);
+}
+
+#restart {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
