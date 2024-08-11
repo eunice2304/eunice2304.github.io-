@@ -26,6 +26,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    padding-left: 40px;
 }
 
 .icons{
@@ -112,6 +113,7 @@ p {
 
 #grid-item-2-1 {
     margin: auto;
+    padding-left: 90px;
 }
 
 #footerText1{
@@ -120,7 +122,6 @@ p {
 
 #footerText2{
     font-size: 15px;
-    margin-left: 30px;
 }
 
 #footerText3{
@@ -149,8 +150,8 @@ p {
 
 /* css for the card game */
 #game-area {
-    margin-left: -10%;
-    width: 115%;
+    margin-left: -3%;
+    width: 108%;
     background-image: url("bottom%20background.png");
     background-repeat: no-repeat;
     background-size: cover;
