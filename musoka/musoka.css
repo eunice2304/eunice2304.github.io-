@@ -150,8 +150,8 @@ p {
 
 /* css for the card game */
 #game-area {
-    margin-left: -3%;
-    width: 108%;
+    margin-left: -5%;
+    width: 110%;
     background-image: url("bottom%20background.png");
     background-repeat: no-repeat;
     background-size: cover;
